@@ -38,7 +38,7 @@ As the DAO expands and the Foundation recedes, this handbook will serve as a ver
    1. [Collateral Onboarding Glossary](https://collateral.makerdao.com/resources/collateral-onboarding-glossary)
    2. [Resources List](https://collateral.makerdao.com/resources/resources-list)
 
-
+Test integration
 
 ## More MakerDAO Documentation
 
