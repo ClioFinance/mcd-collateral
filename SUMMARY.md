@@ -2,19 +2,17 @@
 
 * [Introduction to MakerDAO Collateral Onboarding](README.md)
 
-## Getting Started <a id="introduction-to-collateral-onboarding"></a>
+## Getting Started <a href="#introduction-to-collateral-onboarding" id="introduction-to-collateral-onboarding"></a>
 
 * [Overview of the Collateral Onboarding Process](introduction-to-collateral-onboarding/high-level-overview-of-the-collateral-onboarding-process.md)
 * [Collateral Onboarding Stakeholders](introduction-to-collateral-onboarding/cob-stakeholders-overview.md)
 
-## Community Coordination <a id="community-involvement"></a>
+## Community Coordination <a href="#community-involvement" id="community-involvement"></a>
 
----
-
-* [Coordination and Communications Process](cob-team-coordination-and-communications.md)
-* [Collateral Onboarding Community Meetings](community-collateral-onboarding-calls.md)
-* [Collateral Onboarding Prioritization Framework](cob-prioritization-framework.md)
-* [Collateral Onboarding Funding \(Grants\)](collateral-onboarding-funding-grants.md)
+* [Coordination and Communications Process](community-involvement/cob-team-coordination-and-communications.md)
+* [Collateral Onboarding Community Meetings](community-involvement/community-collateral-onboarding-calls.md)
+* [Collateral Onboarding Prioritization Framework](community-involvement/cob-prioritization-framework.md)
+* [Collateral Onboarding Funding (Grants)](community-involvement/collateral-onboarding-funding-grants.md)
 
 ## Governance & Collateral Onboarding
 
@@ -36,4 +34,3 @@
 
 * [Collateral Onboarding Glossary](resources/collateral-onboarding-glossary.md)
 * [Resources List](resources/resources-list.md)
-
