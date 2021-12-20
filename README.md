@@ -26,7 +26,7 @@ As the DAO expands and the Foundation recedes, this handbook will serve as a ver
    1. [Overview of the Collateral Onboarding Process](https://collateral.makerdao.com/introduction-to-collateral-onboarding/high-level-overview-of-the-collateral-onboarding-process)
    2. [Collateral Onboarding Stakeholders](https://collateral.makerdao.com/introduction-to-collateral-onboarding/cob-stakeholders-overview)
 2. **Community Involvement**
-   1. [Collateral Onboarding Status Updates (Coordination and Communications) ](https://collateral.makerdao.com/cob-team-coordination-and-communications)
+   1. [Collateral Onboarding Status Updates (Coordination and Communications)](https://collateral.makerdao.com/cob-team-coordination-and-communications)
    2. [Collateral Onboarding Community Collateral Onboarding Calls](https://collateral.makerdao.com/community-collateral-onboarding-calls)
    3. [Collateral Onboarding Prioritization Framework spreadsheet](https://collateral.makerdao.com/cob-prioritization-framework)
    4. [Collateral Onboarding Funding](https://collateral.makerdao.com/collateral-onboarding-funding-grants)
@@ -34,11 +34,9 @@ As the DAO expands and the Foundation recedes, this handbook will serve as a ver
 4. [**Collateral Onboarding Guide for Oracle Domain Teams**](https://collateral.makerdao.com/oracles-domain/untitled)
 5. [**Collateral Onboarding Guide for Smart Contracts Domain Teams**](https://collateral.makerdao.com/smart-contracts-domain/untitled)
 6. [**Collateral Risk Assessment Guide**](https://collateral.makerdao.com/risk-domain/untitled)
-7. **Resources**&#x20;
+7. **Resources**
    1. [Collateral Onboarding Glossary](https://collateral.makerdao.com/resources/collateral-onboarding-glossary)
    2. [Resources List](https://collateral.makerdao.com/resources/resources-list)
-
-Test integration
 
 ## More MakerDAO Documentation
 
