@@ -6,6 +6,14 @@ description: >-
 
 # Introduction to MakerDAO Collateral Onboarding
 
+## MakerDAO Documentation Overview
+
+* [Introductory](https://makerdao.world/en/) @ MakerDAO.world
+* [Governance](https://manual.makerdao.com) @ manual.makerdao.com
+* [Technical](https://docs.makerdao.com) @ docs.makerdao.com
+* [**Collateral Onboarding**](https://collateral.makerdao.com) **@ collateral.makerdao.com <-- You are here**
+* [MIPs Portal](https://mips.makerdao.com) @ mips.makerdao.com
+
 ## **Introduction and Motivation**
 
 This handbook contains a thorough collection of information regarding Maker Protocol collateral onboarding, ranging from the formation of domain teams and the explanations of the governance processes involved to the domain work necessary for successful collateral onboarding used to date for successful collateral onboarding, and more.
