@@ -18,12 +18,6 @@ Past implementations of spells can be found in the archive/ folder of each repos
 * Bytes32 converter: [https://web3-type-converter.onbrn.com/](https://web3-type-converter.onbrn.com)
 * Auditing Executive Spells MD by Derek (PE): [https://hackmd.io/ELaxHNjBRn-cVMF6JcML4w?view](https://hackmd.io/ELaxHNjBRn-cVMF6JcML4w?view)
 
-### Useful videos
-
-* Nicolaj's spell walkthrough: [https://drive.google.com/file/d/1V5eL2MKgHuPFaewvp5nke8hexcpTyBsW/view](https://drive.google.com/file/d/1V5eL2MKgHuPFaewvp5nke8hexcpTyBsW/view)
-* Brian's (PE) dss-exec-lib walkthrough: [https://drive.google.com/file/d/1kJ5u6DekBYBguq0KMmTBmy1t4a1VubH2/view?usp=drive\_web](https://drive.google.com/file/d/1kJ5u6DekBYBguq0KMmTBmy1t4a1VubH2/view?usp=drive\_web)
-* CES spell session 1:[https://drive.google.com/file/d/18EjCw5vrNRJDtVgryNV\_kSH2xIh-FDhy/view](https://drive.google.com/file/d/18EjCw5vrNRJDtVgryNV\_kSH2xIh-FDhy/view)
-
 ## Intro
 
 Spells are essentially `DssSpellAction/SpellAction` contracts extended from the `DssAction` abstract contract from `dss-exec-lib`. Alongside `DssExecLib`, which contains the high-level functions used to interact with the Maker Protocol, and `DssExec`, the actual spell deployer, this lib bootstraps a good part of the on-chain interactions required to achieve whatever collateral engineering demands coming from the community/CUs.
