@@ -25,6 +25,7 @@
 ## Smart Contracts Domain
 
 * [Collateral Onboarding Guide for Smart Contracts Domain Teams](smart-contracts-domain/untitled.md)
+* [Collateral Onboarding Spell Crafting Guide](smart-contracts-domain/collateral-onboarding-spell-crafting-guide.md)
 
 ## Risk Domain
 
