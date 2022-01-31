@@ -26,13 +26,11 @@ Taken from `dss-exec-lib` itself:
 
 _The developer must override the actions() function and place all spell actions within. This is called by the execute() function in the pause, which is subject to an optional limiter for office hours._
 
-Overall, an executive contract can only be executed once it has more votes than the previously-executed executive proposal. After a certain proposal has been voted on, governance actually gas a delay of 48 hours in place before any spell is cast. This grace period is in place for a final analysis before on-chain execution.
+Overall, an executive contract can only be executed once it has more votes than the previously-executed executive proposal. After a certain proposal has been voted on, a governance delay (at the time of writing this is 48 hours) is in place before any spell is cast. This grace period is a security consideration to prevent governance attacks.
 
-Polling is used for off-chain voting (Snapshot.org-like) on deciding how to aggregate multiple collateral onboarding proposals, as there's only one proposal up for voting at a time. This also optimizes the timeline for collateral engineering versus the risk factor of changing too many parameters of the protocol at once.
+Polling is used for off-chain voting on deciding how to aggregate multiple proposals, as there's only one executive vote up for voting at a time. This also optimizes the timeline for collateral engineering versus the risk factor of changing too many parameters of the protocol at once.
 
-Different assets can have multiple maker vaults/collateral types (ilks) to deposit collateral with varying risk factors. That's why you'll observe cases like ETH-A/B/C.
-
-
+Different assets can have multiple Maker vaults/collateral types (ilks) to deposit collateral with varying risk factors. That's why you'll observe cases like ETH-A/B/C.
 
 ### DssSpellAction
 
