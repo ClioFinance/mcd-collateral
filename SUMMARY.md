@@ -12,7 +12,6 @@
 * [Coordination and Communications Process](community-involvement/cob-team-coordination-and-communications.md)
 * [Collateral Onboarding Community Meetings](community-involvement/community-collateral-onboarding-calls.md)
 * [Collateral Onboarding Prioritization Framework](community-involvement/cob-prioritization-framework.md)
-* [Collateral Onboarding Funding (Grants)](community-involvement/collateral-onboarding-funding-grants.md)
 
 ## Governance & Collateral Onboarding
 
