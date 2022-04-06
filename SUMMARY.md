@@ -32,5 +32,6 @@
 
 ## Resources
 
+* [Core Units - Contacts](resources/core-units-contacts.md)
 * [Collateral Onboarding Glossary](resources/collateral-onboarding-glossary.md)
 * [Resources List](resources/resources-list.md)
