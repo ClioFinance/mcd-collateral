@@ -7,12 +7,6 @@
 * [Overview of the Collateral Onboarding Process](introduction-to-collateral-onboarding/high-level-overview-of-the-collateral-onboarding-process.md)
 * [Collateral Onboarding Stakeholders](introduction-to-collateral-onboarding/cob-stakeholders-overview.md)
 
-## Community Coordination <a href="#community-involvement" id="community-involvement"></a>
-
-* [Coordination and Communications Process](community-involvement/cob-team-coordination-and-communications.md)
-* [Collateral Onboarding Community Meetings](community-involvement/community-collateral-onboarding-calls.md)
-* [Collateral Onboarding Prioritization Framework](community-involvement/cob-prioritization-framework.md)
-
 ## Governance & Collateral Onboarding
 
 * [Collateral Onboarding Governance Process](governance-and-collateral-onboarding/untitled.md)

@@ -3,10 +3,10 @@
 ## Glossary of Terms
 
 * `Collateral`: assets locked in a Vault
-* `Collateral Onboarding Domain Teams`: Collateral Onboarding Domain Teams \(Risk, Oracles, and Smart Contracts\) are mandated \(elected by MKR holders\) to work for MakerDAO. The domain teams perform defined duties, such as onboarding collateral to the Maker Protocol and mitigating risk.  
-* `Collateral Onboarding Prioritization Framework`: This framework compares and prioritizes proposed collateral types based on defined metrics and weights. The metrics and weights feed a scoring system that's used to stimulate thoughtful discussions and help inform the domain teams on which collateral types to prioritize. It’s important to note that the scoring system is not the only tool used to help determine collateral asset prioritization. The collateral onboarding domain teams may also pursue collateral types previously deferred by the Community Greenlight Polls or those that have yet to be greenlit by the Maker Governance community. 
+* `Collateral Onboarding Domain Teams`: Collateral Onboarding Domain Teams (Risk, Oracles, and Smart Contracts) are mandated (elected by MKR holders) to work for MakerDAO. The Domain Teams perform defined duties, such as onboarding collateral to the Maker Protocol and mitigating risk. &#x20;
+* `Collateral Onboarding Prioritization Framework`: This framework compares and prioritizes proposed collateral types based on defined metrics and weights. The metrics and weights feed a scoring system that's used to stimulate thoughtful discussions and help inform the Domain Teams on which collateral types to prioritize. It’s important to note that the scoring system is not the only tool used to help determine collateral asset prioritization. The collateral onboarding Domain Teams may also pursue collateral types previously deferred by the Community Greenlight Polls or those that have yet to be greenlit by the Maker Governance community.&#x20;
 * `Dai`: USD pegged decentralized stablecoin of the Maker Protocol
-* `Decentralized Risk Management`: the cooperative interaction between Maker Token Holders and the Risk Domain Teams to manage risks in MakerDAO. 
+* `Decentralized Risk Management`: the cooperative interaction between Maker Token Holders and the Risk Domain Teams to manage risks in MakerDAO.&#x20;
 * `Executive Vote`: Executive Votes occur on-chain and are accessed through the Maker Foundation's Voting Portal. Executive Votes "execute" changes to MakerDAO as a whole, including governance processes and the Maker Protocol. In the context of Collateral Onboarding, Executive Votes are used for:
   * Add or remove collateral types to the Maker Protocol
   * Adjust global system parameters.
@@ -18,7 +18,7 @@
 * `Global Debt Ceiling`: the maximum amount of Dai that can be generated in the Maker Protocol.
 * `Governance Facilitator`: ensures the smooth operation of the governance process. This involves a wide range of activities, from general administration and signal-gathering to governance scheduling.
 * `Governance Poll`: Governance Polls occur on-chain and are accessed through the Maker Foundation's Voting Portal. The purpose of Governance Polls are to measure the sentiment of MKR voters. In the case of Collateral Onboarding, Polls are used to:
-  * Measure sentiment on Executive Vote proposals to officially add the collateral type to the Maker Protocol. 
+  * Measure sentiment on Executive Vote proposals to officially add the collateral type to the Maker Protocol.&#x20;
   * Ratify risk parameters for new collateral types as presented by Risk domain teams.
 * `Governance Portal`: a front-end application that allows you to interact with MakerDAO's on-chain governance
 * `Maker Foundation`: the organization that was created to develop and bootstrap the Maker Protocol.
@@ -36,4 +36,3 @@
 * `Vault`: a core component of the Maker Protocol that facilitates the creation of Dai against locked up collateral, there are different Vault types users can utilize
 * `Vote Proxy Contract`: a smart-contract that makes linked wallet voting possible, allowing MKR token holders to vote with their hot wallets using MKR that is stored on their cold wallets
 * `Voting Contract`: a smart-contract that allows MKR holders to vote with their tokens
-

@@ -20,22 +20,22 @@
 
 ## **1. Overview**
 
-The Maker Protocol enables users to generate Dai against an array of assets, including ETH, WBTC, and USDC. In order to ensure that all collateral assets are priced correctly in the Protocol, an Oracle system is used to provide a real-time stream of market price data for each asset in a secure and resilient manner. The Oracle system needs to be resistant to attacks, be they at the technical, crypto-economic, or informational level.
+The Maker Protocol enables users to generate Dai against an array of assets, including ETH, WBTC, and USDC among others. In order to ensure that all collateral assets are priced correctly in the Protocol, an Oracle system is used to provide a real-time stream of market price data for each asset in a secure and resilient manner. The Oracle system needs to be resistant to attacks, be they at the technical, crypto-economic, or informational level.
 
 This price information provided by Oracles is utilized to determine whether Maker Vault positions are sufficiently capitalized or below the collateralization ratio and subject to liquidation. Oracle price information also determines the maximum amount of Dai a user can generate against their collateral. Given the widespread effects the Oracles have on the Maker Protocol, it is imperative that the Data Models used in their implementations are refined to mitigate risk and optimize performance. These Data Models define how data is sourced and how it is filtered into a canonical price.
 
-This Guide captures the best practices of long-time Community smart contract developers as well as the current Oracle Domain Team. It intends to show developers interested in working for the Oracle Domain Team or independently contributing to MakerDAO how the Oracle System and its component parts function and are built upon. We hope that this guide evolves as the Community improves on the processes included herein and as the number of Oracle Domain Teams expands. Thanks for reading!
+This guide captures the best practices of long-time Community smart contract developers as well as the current Oracle Domain Team. It intends to show developers interested in working for the Oracle Domain Team or independently contributing to MakerDAO how the Oracle System and its component parts function and are built upon. We hope that this guide evolves as the Community improves on the processes included herein and as the number of Oracle Domain Teams expands. Thanks for reading!
 
 ## **2. Learning Objectives**
 
 * Learn about the Oracles Domain Work
 * Learn how to onboard an Oracle for collateral onboarding through the MIP10 framework.
 
-## **3. Pre-requisites**
+## **3. Prerequisites**
 
 * [Introduction to the Maker Protocol](https://docs.makerdao.com)
 * [Oracle Module](https://docs.makerdao.com/smart-contract-modules/oracle-module)
-* [MIPs](https://github.com/makerdao/mips)
+* [MIPs](https://mips.makerdao.com)
 * [Solc 0.5.12](https://solidity.readthedocs.io/en/v0.5.12/installing-solidity.html)
 * [Dapp tools](https://dapp.tools)
 * Familiarity with [seth and dapp](http://dapp.tools).
@@ -43,7 +43,7 @@ This Guide captures the best practices of long-time Community smart contract dev
 
 ## **4. Introduction to MIP10c3**
 
-[MIP10](https://github.com/makerdao/mips/blob/master/MIP10/mip10.md) defines Oracle Management in the Maker Protocol, including onboarding an Oracle, updating a Data Model, and performing other tasks that ensure Maker Oracles function properly. [MIP10c3](https://github.com/makerdao/mips/blob/master/MIP10/mip10.md#mip10c3-process-to-onboard-oracle-ot) specifically covers the onboarding of a new Oracle, where Oracle is defined as the on-chain price source. Onboarding a new collateral on the Maker Protocol requires creating a new Oracle, and having the [Oracle Feeds](https://github.com/makerdao/mips/blob/master/MIP10/mip10.md#feeds) updated to start serving it.
+[MIP10](https://mips.makerdao.com/mips/details/MIP10) defines Oracle Management in the Maker Protocol, including onboarding an Oracle, updating a Data Model, and performing other tasks that ensure Maker Oracles function properly. [MIP10c3 ](https://mips.makerdao.com/mips/details/MIP10#MIP10c3)specifically covers the onboarding of a new Oracle, where Oracle is defined as the on-chain price source. Onboarding a new collateral on the Maker Protocol requires creating a new Oracle, and having the [Oracle Feeds](https://mips.makerdao.com/mips/details/MIP10#feeds-) updated to start serving it.
 
 Below, you can find all the steps defined in MIP10c3. While additional information and best practices are provided, they are not formally part of the MIP specifications.
 
@@ -51,26 +51,26 @@ This document does not cover the inclusion of Oracle customers to the Maker Prot
 
 ### **Overview of the collateral onboarding process**
 
-1. [Technical Complexity Evaluation](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.s02gtrlr1wk5)
+1. [Technical Complexity Evaluation](untitled.md#1.-technical-complexity-evaluation)
    * Produce an assessment of the planned collateral
-2. [Oracle Tooling Software Updates](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.nfzu4ayza78d)
+2. [Oracle Tooling Software Updates](untitled.md#3.-oracle-tooling-software-updates)
    * Adapt the Oracle software to gather pricing information on the collateral and use the deployed smart contracts
-3. [Oracle Smart Contract Preparation ](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.rnae8dy4n4mv)
+3. [Oracle Smart Contract Preparation ](untitled.md#4.-prepare-the-medianizer-and-osm-contracts)
    * Make the necessary modifications to the contract and compile them.
-4. [Integration Testing](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.hrssp52mjes8)
+4. [Integration Testing](untitled.md#5.-integration-testing)
    * Run a single Feed and Relayer to confirm they interface well with each other and with the smart contracts.
-5. [Deploy Kovan and Mainnet Smart Contracts](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.ixcorvggejs4)
+5. [Deploy Kovan and Mainnet Smart Contracts](untitled.md#6.-kovan-and-mainnet-contract-deployment)
    * Deploy the compile contract to Kovan and Mainnet with the proper permissions
-6. [Finalize and Publish Tooling Software Updates](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.aendtmje3ak8)
+6. [Finalize and Publish Tooling Software Updates](untitled.md#7.-finalize-and-publish-tooling-software-updates)
    * Final update to the software to point to the deployed mainnet contract.
-7. [Publish the Collateral Onboarding Oracle Assessment (MIP10c3-SP)](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.wh9i3mk2h0d8)
+7. [Publish the Collateral Onboarding Oracle Assessment (MIP10c3-SP)](untitled.md#9.-publish-the-collateral-onboarding-oracle-assessment-mip10c3-sp)
    * Use the sub-proposal template to gather the information.
-8. [Staging Tests](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.tvqc3te8gue0)
+8. [Staging Tests](untitled.md#8.-staging-tests)
    * Long-running test to ensure stability
-9. [Deployment of Oracle Software to feeds and relayers](https://docs.google.com/document/d/1n7yYWs-ySzMosbHOoubuKEWiro6WzvZ7Kcz20htepSk/edit#heading=h.h8zew0uevi8n)
+9. [Deployment of Oracle Software to feeds and relayers](untitled.md#10.-deployment-of-oracle-software-to-feeds-and-relayers)
    * Coordinate with the dark feeds, light feeds, and relayers to update to the new software version and monitor the freshly updated network.
 
-## **5. Technical Complexity Evaluation**
+### **1. Technical Complexity Evaluation**
 
 Determine the complexity of Oracle integration for the collateral type and how long it would take to implement such a solution.
 
@@ -117,7 +117,7 @@ The Oracle Domain Team must ensure that it can deliver the price source in the t
 * Does adding these features require work and/or coordination from other stakeholders, such as the Smart Contracts Team(s)?
 * How long might it take to design, implement, test, and deploy such a solution?
 
-## **6. Build the Data Model**
+### **2. Build the Data Model**
 
 The data model for a collateral type is the formula used by the oracles to determine its price. It is comprised of:
 
@@ -169,7 +169,7 @@ If the collateral isn’t traded directly to USD, supporting data models will be
 |   OKEx        |    BTC/USDT   |              |
 ```
 
-## **7. Oracle Tooling Software Updates**
+### **3. Oracle Tooling Software Updates**
 
 Support of the new Data Model requires updating the off-chain software run by feeds and relayers. Three major pieces of software currently used, setzer, gofer and omnia.
 
@@ -349,7 +349,7 @@ Gofer is another tool used to query the prices from the off-chain sources. If yo
 }
 ```
 
-## **8. Prepare the Medianizer and OSM Contracts**
+### **4. Prepare the Medianizer and OSM Contracts**
 
 Collateral prices are accessed by the Maker Protocol via the Oracle Security Module smart contract. This contract gets its pricing information from the Medianizer, which is the smart contract that the information is pushed to by the Oracle Relayers.
 
@@ -393,9 +393,9 @@ The Oracle Security Module delays the price information provided by the Medianiz
 2. Update the dependencies: `dapp update`
 3. Compile the contract: dapp --use solc:0.5.12 build
 
-## **9. Integration Testing**
+### **5. Integration Testing**
 
-### **Deploy and Configure Integration Testing Contracts**
+#### **Deploy and Configure Integration Testing Contracts**
 
 Set `ETH_RPC_URL` and `ETH_KEYSTORE` to point to the corresponding ethereum node and account for Kovan or another testnet. Deploying smart contracts also requires a fairly large gas limit, such as `ETH_GAS=5000000`.
 
@@ -552,14 +552,14 @@ echo $price
 
 If these steps are successful and that OSM has the price your Feed published earlier, you may proceed to Kovan and Mainnet contract deployments.
 
-## 10. **Kovan and Mainnet Contract Deployment**
+### 6. **Kovan and Mainnet Contract Deployment**
 
 **Follow the steps below for deployment on both Kovan and Mainnet.**
 
 1. Set `ETH_RPC_URL` and `ETH_KEYSTORE` to point to the corresponding ethereum node and a funded account.
 2. Deploy the smart contract using `dapp create MedianPAXGUSD` (updating the contract name) Note the returned address, this is the contract address that will store in `$MEDIAN` for the other steps.
 3. Verify the smart contract on Etherscan by using the flatten source code provided by:**`hevm flatten --source-file src/median.sol --json-file out/dapp.sol.json`**
-4. Add the list of approved feeds to the contract using `lift`. Put the feed address list in the `FEEDS` variable.  For Kovan, coordinate with other Oracle Domain teams to obtain the latest feed list. If necessary, you may extract this list from an existing Medianizer contract using the following script but changing the address to a known working median contract on Kovan:
+4. Add the list of approved feeds to the contract using `lift`. Put the feed address list in the `FEEDS` variable.  For Kovan, coordinate with other Oracle Domain Teams to obtain the latest feed list. If necessary, you may extract this list from an existing Medianizer contract using the following script but changing the address to a known working median contract on Kovan:
 
 ```
 #!/bin/bash
@@ -573,7 +573,7 @@ do
 done
 ```
 
-For mainnet, obtain the list of currently approved production light and dark feeds from[ MIP10c7](https://github.com/makerdao/mips/blob/master/MIP10/MIP10c17-List-of-Feeds.md), and compare it with the live feed list from one of the production Medianizer. Coordinate with the other Oracle Domain teams if you find a discrepancy.
+For mainnet, obtain the list of currently approved production light and dark feeds from[ MIP10c7](https://github.com/makerdao/mips/blob/master/MIP10/MIP10c17-List-of-Feeds.md), and compare it with the live feed list from one of the production Medianizer. Coordinate with the other Oracle Domain Teams if you find a discrepancy.
 
 ```
 FEEDS=("0x1f8fbe73820765677e68eb6e933dcb3c94c9b708")
@@ -640,7 +640,7 @@ seth send $OSM "deny(address)" $ETH_FROM
 seth send $MEDIAN "deny(address)" $ETH_FROM
 ```
 
-## **11. Finalize and Publish Tooling Software Updates**
+### **7. Finalize and Publish Tooling Software Updates**
 
 **1. Submit a PR for Setzer**
 
@@ -654,7 +654,7 @@ Because Omnia configuration depends on the availability of a specific setzer ver
 * Update `oracles-v2/omnia/config/feed.conf`, `oracles-v2/omnia/config/relayer.conf` and `oracles-v2/omnia/config/relayer-kovan.conf` to point to the mainnet deployment of the Medianizer contract.
 * Update `oracles-v2/systemd/gofer.json` to add the data model for your new collateral. See the [gofer documentation](https://github.com/makerdao/oracle-suite/blob/master/cmd/gofer/README.md) for more details and examples.
 
-## **12. Staging Tests**
+### **8. Staging Tests**
 
 To ensure software stability and avoid dangerous oracle outages in production, it is necessary to run the new Oracle Software and deploy smart contracts for a period of 7 to 14 days on at least 4 feeds and 2 relayers on a testnet environment.
 
@@ -662,7 +662,7 @@ To facilitate these steps, terraform configuration and deployment scripts are ma
 
 The existing Oracle Team maintains an Oracle staging network on Kovan that can be used for this testing. Coordinate with the Oracle Team to join this network, or consider deploying your own.
 
-## **13. Publish the Collateral Onboarding Oracle Assessment (MIP10c3-SP)**
+### **9. Publish the Collateral Onboarding Oracle Assessment (MIP10c3-SP)**
 
 Use the official [MIP10c3-SP](https://github.com/makerdao/mips/blob/master/MIP10/MIP10c3-Subproposal-Template.md) template to create a new sub-proposal for the collateral. To be able to complete it, you will need the following information:
 
@@ -675,7 +675,7 @@ Note that the template is also used to define the Oracle customers (other than t
 
 Once completed, submit a PR to the official MIP [repo](https://github.com/makerdao/mips) and publish a post to the [forum](https://forum.makerdao.com) with the content of the SP.
 
-## **14. Deployment of Oracle Software to feeds and relayers**
+### **10. Deployment of Oracle Software to feeds and relayers**
 
 In preparation for the addition of collateral to the Maker Protocol, the Oracle Team will coordinate with the dark feeds, light feeds, and relayers to update to the new software version and monitor the freshly updated network.
 
@@ -683,6 +683,6 @@ Feed providers need to always be alert to new updates of their clients and updat
 
 Every time there’s an update to the configuration in the oracles feed software, every other feed provider must update to that configuration so as to not run into issues when adding new feeds in the future. In other words, every feed provider must have the same version of the software client, with the same configuration.
 
-## **15. Summary**
+## **5. Summary**
 
 In this guide, you were introduced to the MIP10c3 process of setting up an oracle for a new collateral that is to be onboarded to the Maker Protocol. The steps involved were selecting the right data sources, updating the software stack, deploying the smart contracts and testing it. The final step was to put it all together for the Maker Governance approval by using the MIP10c3 template. With this guide, you gathered the knowledge to help the Maker Protocol become more decentralized by learning the Oracle Domain Work and help onboard new collaterals into the protocol.

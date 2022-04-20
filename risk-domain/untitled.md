@@ -40,7 +40,7 @@ Failure to properly assess collateral asset risks can lead to unfit risk paramet
 
 ## **6. Risk Domain Team Process**
 
-The Risk Domain Team is just one of multiple domain contributors involved in the collateral onboarding process. The collateral onboarding process begins with the [MIP6](https://github.com/makerdao/mips/blob/Accepted/MIP6/mip6.md) (Maker Improvement Proposal framework) process. Once an asset has been greenlit by the community to be onboarded to the Maker Protocol, the domain teams start their respective asset-related work. For the risk domain team, this means creating a risk assessment consisting of a risk analysis and proposed risk parameters for the asset in the Maker Protocol. When completed, that assessment is posted to the Maker Forum for broad community discussion.
+The Risk Domain Team is just one of multiple domain contributors involved in the collateral onboarding process. The collateral onboarding process begins with the [MIP6](https://github.com/makerdao/mips/blob/Accepted/MIP6/mip6.md) (Maker Improvement Proposal framework) process. Once an asset has been greenlit by the community to be onboarded to the Maker Protocol, the Domain Teams start their respective asset-related work. For the risk Domain Team, this means creating a risk assessment consisting of a risk analysis and proposed risk parameters for the asset in the Maker Protocol. When completed, that assessment is posted to the Maker Forum for broad community discussion.
 
 ## **7. Risk Assessment Process**
 

@@ -13,7 +13,7 @@
      * Median and Oracle Security Module (OSM)
    * Deployment Scripts
    * Modifying the Maker Codebase
-5. Deploy Collateral Type on Kovan
+5. Deploy Collateral Type on Göerli
    * What is a spell?
    * Github Repository Processes
    * Deploy contracts
@@ -28,7 +28,7 @@
      * OSM Configuration
      * Update parameters
      * Update ilk registry
-     * Configure the faucet (kovan)&#x9;
+     * Configure the faucet (goërli)&#x9;
    * Update DSS Spell
      * License
    * Spell Testing
@@ -42,7 +42,7 @@
 
 This Collateral Onboarding Smart Contract Guide succinctly captures the best practices of past and present Community smart contract developers and the Maker Foundation’s smart contracts team. For developers interested in working on the Smart Contracts Domain Team or independently contributing to MakerDAO, the guide describes how gems are joined and spells are cast, among other things. This guide is intended to evolve as the Maker Community improves on the processes described herein.
 
-The smart contract domain team oversees the assessment of the collateral's token contract, deployment of its adapter and auction, as well as development of a Spell or Spell snippet, which is responsible for activating the collateral type in the Maker Protocol.
+The Smart Contract Domain Team oversees the assessment of the collateral's token contract, deployment of its adapter and auction, as well as development of a Spell or Spell snippet, which is responsible for activating the collateral type in the Maker Protocol.
 
 **At a high level, the smart contract contributor(s) of a Collateral Onboarding team do  the following:**
 
