@@ -288,7 +288,7 @@ For instance, to change the data model for PAXG/USD to use the PAXG/USDT pricing
 
 ```
 $ echo json=$(curl -sS <https://api.probit.com/api/exchange/v1/ticker?market_ids=PAXG-USDT>)
-json={"data":[{"last":"1930","low":"1892","high":"1949","change":"14","base_volume":"4.86095411","quote_volume":"9299.20180356","market_id":"PAXG-USDT","time":"2020-10-05T19:38:27.000Z"}]}
+json={"data":[{"last":"1930","low":"1892","high":"1949","change":"14","base_volume":"4.86095411","quote_volume":"9299.20180356","market_id":"PAXG-USDT","time":"2020-10-05T19:38:27.000Z"}
 ```
 
 `jshon` can extract the price from the json response:

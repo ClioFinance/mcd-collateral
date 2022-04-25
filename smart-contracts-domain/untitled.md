@@ -282,7 +282,7 @@ Please re-check the authorization permissions for all newly deployed contracts. 
 #### **Setup your spell**
 
 1. Create a new branch on the spells-kovan repo named `TOKEN-X`.
-2. Copy the [spell action template](https://github.com/makerdao/spells-kovan/blob/master/template/SpellAction.sol) in the `./template` directory to add the new collateral type with values from [https://github.com/makerdao/dss-deploy-scripts/blob/master/config/kovan.json](https://github.com/makerdao/dss-deploy-scripts/blob/master/config/kovan.json), and then replace the contents of the `src/Kovan-DssSpell.sol` contract with it. It is important that the template is exactly followed and no changes are made since it was created after many iterations. Reviews would be conducted against it line by line and they would fail if any changes are introduced to the template.
+2. Copy the [spell action template](https://github.com/makerdao/spells-kovan/blob/master/template/SpellAction.sol) in the `./template` directory to add the new collateral type with values from [https://github.com/makerdao/dss-deploy-scripts/tree/master/config](https://github.com/makerdao/dss-deploy-scripts/tree/master/config),  and then replace the contents of the `src/Kovan-DssSpell.sol` contract with it. It is important that the template is exactly followed and no changes are made since it was created after many iterations. Reviews would be conducted against it line by line and they would fail if any changes are introduced to the template.
 
 #### **Update addresses**
 

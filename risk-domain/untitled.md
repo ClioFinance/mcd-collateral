@@ -176,7 +176,6 @@ This section of the assessment should cover how much of the token supply is depo
 **How to retrieve the data**
 
 * Nansen API: [https://nansen.ai/](https://nansen.ai)
-* D5 API: [https://d5.ai/](https://d5.ai)&#x20;
 
 **How to present and analyze the data**
 
@@ -285,7 +284,7 @@ This data can be found by analyzing on-chain DEXs, popular DeFi protocols, analy
 **How to retrieve the data**
 
 * Cryptocompare API: [https://min-api.cryptocompare.com/documentation](https://min-api.cryptocompare.com/documentation)&#x20;
-* Uniswap API: [https://uniswap.org/docs/v2/API/overview/](https://uniswap.org/docs/v2/API/overview/)
+* Uniswap API: [https://docs.uniswap.org/protocol/V2/reference/API/overview](https://docs.uniswap.org/protocol/V2/reference/API/overview)
 * Balancer API: [https://github.com/balancer-labs/balancer-subgraph](https://github.com/balancer-labs/balancer-subgraph)
 * 0x API: [https://0x.org/docs/api](https://0x.org/docs/api)
 * Kyber API: [https://developer.kyber.network/docs/TrackerAPIGuide/](https://developer.kyber.network/docs/TrackerAPIGuide/)
@@ -340,8 +339,8 @@ To assess risk parameters for assets with larger debt exposures, such as ETH or 
 
 These inputs are relevant only once a Vault type is live and utilized, and meant more for continuous risk monitoring and proposing adjusted risk parameters.
 
-* Vault Collateralization Ratios ([http://makervaults.descipher.io/](http://makervaults.descipher.io))
-* Liquidation prices ([http://makervaults.descipher.io/](http://makervaults.descipher.io))
+* Vault Collateralization Ratios&#x20;
+* Liquidation prices
 * Vault DAI utilization (long/short DAI, DAI deposit whitelisting)
 * Minting/Repayments stats
 

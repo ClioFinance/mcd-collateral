@@ -4,7 +4,7 @@ Spells are essentially contracts that do something (or some things) once. They a
 
 The engineering process is quite straightforward, but at the same time is specific to each case and also requires comprehensive testing.
 
-Currently, the main spell repositories are located at [spells-goerli ](https://github.com/mardao/spells-goerli)and[ spells-mainnet](https://github.com/mardao/spells-mainnet). Working development branch follows a _exec-YY-MM-DD_ branch naming according to the sprint end date, so the Goerli repo should be forked, thoroughly tested, and then handed over to the Protocol Engineering Core Unit for Mainnet execution.
+Currently, the main spell repositories are located at [spells-goerli](https://github.com/makerdao/spells-goerli) and [spells-mainnet](https://github.com/makerdao/spells-mainnet). Working development branch follows a _exec-YY-MM-DD_ branch naming according to the sprint end date, so the Goerli repo should be forked, thoroughly tested, and then handed over to the Protocol Engineering Core Unit for Mainnet execution.
 
 Past implementations of spells can be found in the archive/ folder of each repository alongside test files.
 
