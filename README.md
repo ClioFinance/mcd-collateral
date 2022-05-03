@@ -1,7 +1,7 @@
 ---
 description: >-
   The Collateral Onboarding Handbook is designed to be the one-stop-shop for all
-  things related to collateral onboarding at MakerDAO.
+  things related to collateral onboarding at MakerDAO
 ---
 
 # Introduction to MakerDAO Collateral Onboarding
