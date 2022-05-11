@@ -12,13 +12,13 @@ The Collateral Onboarding process is a crucial aspect of growing MakerDAO. Onboa
 
 **1. A Collateral Onboarding Application is completed and proposed to the MakerDAO community in the Maker Forum.**
 
-* Collateral applications should be submitted as a new topic in the forums on the "[Collateral Onboarding Applications (MIP6)](https://forum.makerdao.com/c/collateral-onboarding/co/17)" category.
+* Collateral applications should be submitted as a new topic in the forums on the "[Collateral Onboarding Applications (MIP6)](https://forum.makerdao.com/c/collateral-onboarding/co/17)" category and follow the guidelines defined in [MIP6](https://mips.makerdao.com/mips/details/MIP6#MIP6c2) (and [MIP67](https://mips.makerdao.com/mips/details/MIP67#MIP67c1) for Real World Assets).
 * New collateral applications are added to the [Collateral Status Index spreadsheet](https://docs.google.com/spreadsheets/d/1PDf\_CzhGa7mLuOUfX6Bz3WrnCjDRhIjmu-vDZMMw4Qc).
 * The Application will be discussed in the Forum over a two-week period before being eligible for a Community Greenlight Poll.
 
 **2. Collateral Onboarding Community Greenlight Polls**
 
-* Community Greenlight Polls allow holders of MKR, the governance token of the Maker Protocol, to signal their judgment on the value of a potential collateral type before Domain Teams thoroughly investigate that collateral type.
+* [Community Greenlight Polls](https://mips.makerdao.com/mips/details/MIP9) allow holders of MKR, the governance token of the Maker Protocol, to signal their judgment on the value of a potential collateral type before [Domain Teams](https://mips.makerdao.com/mips/details/MIP7#MIP7c1) thoroughly investigate that collateral type.
 * Greenlight Polls last for two weeks.
 * The outcome of the Greenlight Polls are updated in the [Collateral Status Index spreadsheet](https://docs.google.com/spreadsheets/d/1PDf\_CzhGa7mLuOUfX6Bz3WrnCjDRhIjmu-vDZMMw4Qc).
 
@@ -31,7 +31,7 @@ The Collateral Onboarding process is a crucial aspect of growing MakerDAO. Onboa
 **5. Domain collateral assessments are created and published to the Maker Forum while awaiting the posting of a Governance Poll.**
 
 * Once collateral is prioritized by the Domain Teams, the domain collateral assessments are schedule to be created by the MakerDAO Risk, Oracle, and Smart Contracts Domain Teams and contain in-depth evaluations of collateral types. The goal of the assessments is to provide information to help inform the MakerDAO governance community. During the analysis and assessment process, one or more Domain Teams, at their discretion, may make a decision to stop the collateral onboarding process due to information uncovered. For example, the risk assessment shows a highly illiquid market which would prevent the liquidation of the collateral.
-* Once all assessments are [published](https://forum.makerdao.com/c/collateral-onboarding/domain-work/28), Governance Polls are created which allow MKR holders to signal their support or opposition to adding a collateral type to the Maker Protocol.
+* Once all assessments are [published](https://forum.makerdao.com/c/collateral-onboarding/domain-work/28), [Governance Polls ](https://mips.makerdao.com/mips/details/MIP8#MIP8c1)are created which allow MKR holders to signal their support or opposition to adding a collateral type to the Maker Protocol.
 
 **6. If the Governance Poll passes, the Domain Teams finalize their respective work and an Executive Vote is scheduled; if the Poll does not pass, a request for a new governance poll may be resubmitted in the future.**&#x20;
 
@@ -39,7 +39,7 @@ The Collateral Onboarding process is a crucial aspect of growing MakerDAO. Onboa
 
 **7. Once the required work of MakerDAO Risk, Oracle, and Smart Contracts Domain Teams is done, an Executive Spell is prepared.**
 
-* The Executive Spell is a smart contract created for each Executive Vote. The smart contract contains logic that implements changes agreed to by voters in prior Governance polls. It’s important to note that the Executive Vote needs to pass in order to officially implement the changes in the Executive Spell to the Maker Protocol.
+* The Executive Spell is a smart contract created for each weekly [Executive Vote](https://manual.makerdao.com/governance/governance-cycle/weekly-governance-cycle). The smart contract contains logic that implements changes agreed to by voters in prior Governance polls. It’s important to note that the Executive Vote needs to pass in order to officially implement the changes in the Executive Spell to the Maker Protocol.
 
 **8. The Executive Vote date is announced once the Executive Spell is complete.**&#x20;
 

@@ -44,9 +44,10 @@ The aim of this guide is to provide the MakerDAO Community an overview of the go
 
 #### _An 11-step process must be followed to onboard a collateral type to the Maker Protocol:_
 
-1. Read [MIP6](https://mips.makerdao.com/mips/details/MIP6) which defines the Collateral Onboarding Application.&#x20;
-2. Complete the [Collateral Onboarding Application](https://mips.makerdao.com/mips/details/MIP6#MIP6c2), and then [publish it to the MakerDAO Forum](https://forum.makerdao.com/c/collateral-onboarding/co/17) (follow [this example](https://forum.makerdao.com/t/gusd-mip6-collateral-onboarding-application/3319)), where it will remain open for discussion for two weeks.
-3. Answer questions posed by the MakerDAO community. While not a requirement, your responses can help generate support or excitement for your proposed collateral type. You might also choose to organize a [collateral onboarding call](https://forum.makerdao.com/t/collateral-calls-calling-all-projects/3715) to further pitch the proposal and spur more community discussion.
+1. Read [MIP6](https://mips.makerdao.com/mips/details/MIP6) which defines the Collateral Onboarding Application and [MIP67](https://mips.makerdao.com/mips/details/MIP67#MIP67c1) for Real World Assets cases.
+2. For Crypto native collateral, such as ERC20 tokens, complete the [Collateral Onboarding Application](https://mips.makerdao.com/mips/details/MIP6#MIP6c2), and then [publish it to the MakerDAO Forum](https://forum.makerdao.com/c/collateral-onboarding/co/17) (follow [this example](https://forum.makerdao.com/t/gusd-mip6-collateral-onboarding-application/3319)), where it will remain open for discussion for two weeks.
+3. For Real World Assets (RWA), both [MIP6](https://mips.makerdao.com/mips/details/MIP6) and [MIP67](https://mips.makerdao.com/mips/details/MIP67#MIP67c1) should be filled out and it is highly recommemded to engage with the [Real World Finance Core Unit](../resources/core-units-contacts.md) (RWF CU) in order to prepare a good quality application.
+4. Answer questions posed by the MakerDAO community. While not a requirement, your responses can help generate support or excitement for your proposed collateral type. You might also choose to organize a [collateral onboarding call](https://forum.makerdao.com/t/collateral-calls-calling-all-projects/3715) to further pitch the proposal and spur more community discussion.
 
 4\. After the two-week discussion period, the proposal is eligible for a Community Greenlight Poll (defined in [MIP9](https://mips.makerdao.com/mips/details/MIP9)).
 
