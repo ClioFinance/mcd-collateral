@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction to MakerDAO Collateral Onboarding](README.md)
+* [Quick Start Guide](quick-start-guide.md)
 
 ## Getting Started <a href="#introduction-to-collateral-onboarding" id="introduction-to-collateral-onboarding"></a>
 
