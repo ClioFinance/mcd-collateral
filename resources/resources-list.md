@@ -20,7 +20,7 @@
    1. [Oracle Module](https://docs.makerdao.com/smart-contract-modules/oracle-module)
    2. [MIPs](https://github.com/makerdao/mips)
    3. [Solc 0.5.12](https://solidity.readthedocs.io/en/v0.5.12/installing-solidity.html)
-   4. [Dapp tools](https://dapp.tools)
+   4. [Dapp tools](https://dapp.tools/)
 
 ### **3. MIPs & Governance**
 

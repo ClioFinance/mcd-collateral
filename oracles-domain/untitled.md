@@ -33,12 +33,12 @@ This guide captures the best practices of long-time Community smart contract dev
 
 ## **3. Prerequisites**
 
-* [Introduction to the Maker Protocol](https://docs.makerdao.com)
+* [Introduction to the Maker Protocol](https://docs.makerdao.com/)
 * [Oracle Module](https://docs.makerdao.com/smart-contract-modules/oracle-module)
-* [MIPs](https://mips.makerdao.com)
+* [MIPs](https://mips.makerdao.com/)
 * [Solc 0.5.12](https://solidity.readthedocs.io/en/v0.5.12/installing-solidity.html)
-* [Dapp tools](https://dapp.tools)
-* Familiarity with [seth and dapp](http://dapp.tools).
+* [Dapp tools](https://dapp.tools/)
+* Familiarity with [seth and dapp](http://dapp.tools/).
 * Working [nix environment](https://github.com/dapphub/dapptools#installation) for testing.
 
 ## **4. Introduction to MIP10c3**
@@ -76,7 +76,7 @@ Determine the complexity of Oracle integration for the collateral type and how l
 
 #### **Data Sources**
 
-First, determine the number and availability of public data sources needed to construct a reliable, resilient, and secure Oracle for the proposed collateral asset. Start by looking at the list of the exchanges where the collateral is currently being traded, which can be obtained from [CoinGecko](https://www.coingecko.com/en) and [Messari](https://messari.io), or from the promoters of the token listing. The exchanges listed will vary in quality; therefore, take into account the following criteria when evaluating an exchange as a potential price source:
+First, determine the number and availability of public data sources needed to construct a reliable, resilient, and secure Oracle for the proposed collateral asset. Start by looking at the list of the exchanges where the collateral is currently being traded, which can be obtained from [CoinGecko](https://www.coingecko.com/en) and [Messari](https://messari.io/), or from the promoters of the token listing. The exchanges listed will vary in quality; therefore, take into account the following criteria when evaluating an exchange as a potential price source:
 
 * Trading volume and order book depth: We are looking for consistently deep order books and large historic trading volume. Taken together, these two criteria ensure that the price of the collateral on that exchange will not be significantly more volatile than the collateral itself ( i.e., large orders will not skew the price significantly more than the other sources).
 * Exchange reputation: Some exchanges report inflated numbers, due in part to wash trading. Consult industry resources, such as[ Messari.io](http://messari.io)’s “Real Volume” list of trusted exchanges to assess the exchange reputation. Even if some exchanges might exhibit some wash trading, it might still be used as a data source if it’s found out that it has a significant proportion of legitimate trading.
@@ -673,7 +673,7 @@ Use the official [MIP10c3-SP](https://github.com/makerdao/mips/blob/master/MIP10
 
 Note that the template is also used to define the Oracle customers (other than the Maker Protocol). Reviewing the inclusion of such customers is not in the scope of this document.
 
-Once completed, submit a PR to the official MIP [repo](https://github.com/makerdao/mips) and publish a post to the [forum](https://forum.makerdao.com) with the content of the SP.
+Once completed, submit a PR to the official MIP [repo](https://github.com/makerdao/mips) and publish a post to the [forum](https://forum.makerdao.com/) with the content of the SP.
 
 ### **10. Deployment of Oracle Software to feeds and relayers**
 

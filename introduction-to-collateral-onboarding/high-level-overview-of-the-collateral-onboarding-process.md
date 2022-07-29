@@ -48,4 +48,4 @@ The Collateral Onboarding process is a crucial aspect of growing MakerDAO. Onboa
 **9. If the Executive Vote passes, the collateral asset is added to the Maker Protocol; if it fails the collateral type has officially been rejected from being added to the Maker Protocol.**&#x20;
 
 * As mentioned in step 6, governance polls for collateral onboarding may be resubmitted up to two times before not being eligible for resubmission. If a resubmitted governance poll passes, it will proceed to an Executive Vote once again.
-* If the Executive Vote passes, the collateral type(s) is added to the Maker Protocol, and the addition communicated on Maker social channels ([Twitter](https://twitter.com/makerdao), the [Maker blog](https://blog.makerdao.com), and [Discord](https://discord.gg/TjJWqHBxx3)). \
+* If the Executive Vote passes, the collateral type(s) is added to the Maker Protocol, and the addition communicated on Maker social channels ([Twitter](https://twitter.com/makerdao), the [Maker blog](https://blog.makerdao.com/), and [Discord](https://discord.gg/TjJWqHBxx3)). \

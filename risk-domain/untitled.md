@@ -102,7 +102,7 @@ Metrics and Analysis are necessary to help determine token risk and liquidity.
 
 #### **CEX and DEX volumes**
 
-This section should present an analysis (with graphs) of the trading volumes of the asset in centralized exchanges (CEXs) and decentralized exchanges (DEXs). The analysis should only cover trading pairs of the asset with ETH, BTC, or stablecoins, as they are typically the most liquid. It is also important to only look at and share data from reputable exchanges (e.g., established exchanges with no history of false or inflated trading activity) to provide a true picture of volume data. For relevant token-by-token data, [Messari](https://messari.io) can be a useful source.&#x20;
+This section should present an analysis (with graphs) of the trading volumes of the asset in centralized exchanges (CEXs) and decentralized exchanges (DEXs). The analysis should only cover trading pairs of the asset with ETH, BTC, or stablecoins, as they are typically the most liquid. It is also important to only look at and share data from reputable exchanges (e.g., established exchanges with no history of false or inflated trading activity) to provide a true picture of volume data. For relevant token-by-token data, [Messari](https://messari.io/) can be a useful source.&#x20;
 
 For centralized exchanges, data provided by Cryptocompare is deemed reliable by the current risk team. For decentralized exchanges, data from Uniswap, Balancer, 0x, and Kyber is deemed reliable. When using data from less reputable exchanges, apply appropriate filters, adjusting the volume accordingly to the actual trading volume. Estimating the amount of actual trading can be difficult and somewhat subjective, but it is recommended to compare the daily volume / deposits ratio of reputable and suspicious exchanges to understand the size of real v. fake volume. The methodology in determining the filter size (if applied) should be briefly described in this section.
 
@@ -140,7 +140,7 @@ Token distribution metrics determine circulating supply and token liquidity, and
 Below is a list of the aforementioned data sources and links to their APIs for data retrieval.
 
 * Etherscan API: [https://etherscan.io/apis](https://etherscan.io/apis)
-* Santiment API: [https://neuro.santiment.net/](https://neuro.santiment.net)
+* Santiment API: [https://neuro.santiment.net/](https://neuro.santiment.net/)
 
 **How to present and analyze the data**
 
@@ -175,7 +175,7 @@ This section of the assessment should cover how much of the token supply is depo
 
 **How to retrieve the data**
 
-* Nansen API: [https://nansen.ai/](https://nansen.ai)
+* Nansen API: [https://nansen.ai/](https://nansen.ai/)
 
 **How to present and analyze the data**
 
@@ -247,7 +247,7 @@ This section is only relevant for stablecoins and should contain an analysis of 
 **How to retrieve the data**
 
 * CoinMetrics: [https://coinmetrics.io/community-network-data/](https://coinmetrics.io/community-network-data/)
-* Bloxy: [https://bloxy.info/](https://bloxy.info)
+* Bloxy: [https://bloxy.info/](https://bloxy.info/)
 
 **How to present and analyze the data**
 
@@ -263,7 +263,7 @@ This section is only relevant for stablecoins and should contain an analysis of 
 **How to retrieve the data**
 
 * CoinMetrics: [https://coinmetrics.io/community-network-data/](https://coinmetrics.io/community-network-data/)
-* Block explorers: [https://bloxy.info/](https://bloxy.info) or [https://etherscan.io/](https://etherscan.io)
+* Block explorers: [https://bloxy.info/](https://bloxy.info/) or [https://etherscan.io/](https://etherscan.io/)
 
 **How to present and analyze the data**
 
@@ -288,7 +288,7 @@ This data can be found by analyzing on-chain DEXs, popular DeFi protocols, analy
 * Balancer API: [https://github.com/balancer-labs/balancer-subgraph](https://github.com/balancer-labs/balancer-subgraph)
 * 0x API: [https://0x.org/docs/api](https://0x.org/docs/api)
 * Kyber API: [https://developer.kyber.network/docs/TrackerAPIGuide/](https://developer.kyber.network/docs/TrackerAPIGuide/)
-* Dune Analytics: [https://duneanalytics.com/](https://duneanalytics.com)
+* Dune Analytics: [https://duneanalytics.com/](https://duneanalytics.com/)
 
 **How to present and analyze the data**
 

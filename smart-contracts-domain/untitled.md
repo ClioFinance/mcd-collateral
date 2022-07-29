@@ -51,7 +51,7 @@ The Smart Contract Domain Team oversees the assessment of the collateral's token
 3. Deploy the collateral type on Kovan
 4. Deploy the collateral type on Mainnet
 
-Smart contract domain contributor(s) must have a strong understanding of the smart contracts within the Maker Protocol. Therefore, it is recommended to thoroughly review the[ Maker Protocol 101](https://docs.makerdao.com/maker-protocol-101) documentation and each smart contract module detailed in the [Introduction to the Maker Protocol](https://docs.makerdao.com).
+Smart contract domain contributor(s) must have a strong understanding of the smart contracts within the Maker Protocol. Therefore, it is recommended to thoroughly review the[ Maker Protocol 101](https://docs.makerdao.com/maker-protocol-101) documentation and each smart contract module detailed in the [Introduction to the Maker Protocol](https://docs.makerdao.com/).
 
 Also review the[ Multi-Collateral Dai README.md](https://github.com/makerdao/dss#multi-collateral-dai) documentation on GitHub. The conceptual overviews of Collateral, Adapters, Price Feeds, and Liquidations contained therein will be helpful to Collateral Onboarding.
 
@@ -96,7 +96,7 @@ Adding a new collateral type (`ilk`) to the Maker Protocol requires the addition
 
 #### **GemJoin**
 
-[The `GemJoin` adapter](https://docs.makerdao.com/smart-contract-modules/collateral-module/join-detailed-documentation) is the interface between the collateral token contract and the core accounting contract (`Vat`). Its purpose is to abstract away all the particular features of a specific token, hence standardizing the token behavior before being debited in the Maker Protocol. It's similar to[ WETH](https://weth.io), but rather than conforming ETH to an ERC20 standard, a `GemJoin` adapter conforms XYZ token to Maker's internal balance standard (`gem`). Each collateral has its own `GemJoin` Adapter.
+[The `GemJoin` adapter](https://docs.makerdao.com/smart-contract-modules/collateral-module/join-detailed-documentation) is the interface between the collateral token contract and the core accounting contract (`Vat`). Its purpose is to abstract away all the particular features of a specific token, hence standardizing the token behavior before being debited in the Maker Protocol. It's similar to[ WETH](https://weth.io/), but rather than conforming ETH to an ERC20 standard, a `GemJoin` adapter conforms XYZ token to Maker's internal balance standard (`gem`). Each collateral has its own `GemJoin` Adapter.
 
 If the collateral token contract being assessed is not similar enough to existing collateral in the Maker Protocol, your team will need to implement a new `GemJoin` Adapter.
 

@@ -13,10 +13,10 @@ This documentation is under review. For onboarding new collateral to the Maker p
 ## MakerDAO Documentation Overview
 
 * [Introductory](https://makerdao.world/en/) @ MakerDAO.world
-* [Governance](https://manual.makerdao.com) @ manual.makerdao.com
-* [Technical](https://docs.makerdao.com) @ docs.makerdao.com
-* [**Collateral Onboarding**](https://collateral.makerdao.com) **@ collateral.makerdao.com ← You are here**
-* [MIPs Portal](https://mips.makerdao.com) @ mips.makerdao.com
+* [Governance](https://manual.makerdao.com/) @ manual.makerdao.com
+* [Technical](https://docs.makerdao.com/) @ docs.makerdao.com
+* [**Collateral Onboarding**](https://collateral.makerdao.com/) **@ collateral.makerdao.com ← You are here**
+* [MIPs Portal](https://mips.makerdao.com/) @ mips.makerdao.com
 
 ## **Introduction and Motivation**
 

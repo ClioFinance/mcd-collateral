@@ -14,8 +14,8 @@ Past implementations of spells can be found in the archive/ folder of each repos
 * ilk-registry: [https://github.com/makerdao/ilk-registry](https://github.com/makerdao/ilk-registry)
 * dss-gem-joins: [https://github.com/makerdao/dss-gem-joins](https://github.com/makerdao/dss-gem-joins)
 * Maker Glossary: [https://docs.makerdao.com/other-documentation/system-glossary](https://docs.makerdao.com/other-documentation/system-glossary)
-* Maker Change Log for contract addresses: [https://changelog.makerdao.com/](https://changelog.makerdao.com)
-* Bytes32 converter: [https://web3-type-converter.onbrn.com/](https://web3-type-converter.onbrn.com)
+* Maker Change Log for contract addresses: [https://changelog.makerdao.com/](https://changelog.makerdao.com/)
+* Bytes32 converter: [https://web3-type-converter.onbrn.com/](https://web3-type-converter.onbrn.com/)
 * Auditing Executive Spells MD by Derek (PE): [https://hackmd.io/ELaxHNjBRn-cVMF6JcML4w?view](https://hackmd.io/ELaxHNjBRn-cVMF6JcML4w?view)
 
 ## Intro
@@ -72,7 +72,7 @@ rates[800] = 1000000002440418608258400030; // Notice we rejamove de dot!
 
 #### Contract addresses
 
-These contracts below need to be deployed before the creation of the Spell on a per-case basis. Deployed factories to create them can be found on the [Maker Changelog](https://changelog.makerdao.com) after navigating to → chosen network → latest release → Contract addresses → _VAR\_KEY_
+These contracts below need to be deployed before the creation of the Spell on a per-case basis. Deployed factories to create them can be found on the [Maker Changelog](https://changelog.makerdao.com/) after navigating to → chosen network → latest release → Contract addresses → _VAR\_KEY_
 
 Contracts owner needs to be the _MCD\_PAUSE\_PROXY_ address proxy, which ends up being authorized as the highest-level admin to cast the spells.
 
@@ -139,7 +139,7 @@ Can include multiple actions of different types (e.g. multiple collateral onboar
 
     `uint256 _amount`
 
-    `uint256 _gap` = can be fetched by inputting the bytes32 of the ilk (that can be obtained using a tool such as [Web3 Type Converter](https://web3-type-converter.onbrn.com)) in the ilks method of the[ DssAutoLine contract](https://etherscan.io/address/0xC7Bdd1F2B16447dcf3dE045C4a039A60EC2f0ba3#readContrac).
+    `uint256 _gap` = can be fetched by inputting the bytes32 of the ilk (that can be obtained using a tool such as [Web3 Type Converter](https://web3-type-converter.onbrn.com/)) in the ilks method of the[ DssAutoLine contract](https://etherscan.io/address/0xC7Bdd1F2B16447dcf3dE045C4a039A60EC2f0ba3#readContrac).
 
     `uint256 _ttl` = amount in seconds of each gap interval
 *   `setIlkMinVaultAmount` = Public function to increase or decrease the dust parameter. Parameters:
