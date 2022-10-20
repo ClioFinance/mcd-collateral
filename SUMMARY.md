@@ -11,6 +11,7 @@
 ## Governance & Collateral Onboarding
 
 * [Collateral Onboarding Governance Process](governance-and-collateral-onboarding/untitled.md)
+* [RWA Legal Documentation Operations Guide](governance-and-collateral-onboarding/rwa-legal-documentation-operations-guide.md)
 
 ## Oracles Domain
 
